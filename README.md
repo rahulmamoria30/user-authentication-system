@@ -6,7 +6,7 @@ This project is a user authentication system built with a focus on functionality
 
 ---
 
-Live demo: [https://user-authentication-system-wanderon.netlify.app](https://user-authentication-system-wanderon.netlify.app)
+Live demo: [https://user-authentication-system-practice.netlify.app/](https://user-authentication-system-practice.netlify.app/)
 ## Frontend
 
 ### Technologies Used:
