@@ -17,7 +17,7 @@ const LoginForm: React.FC = () => {
   const onFinish = async (values: LoginFormValues) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/auth/${isLogin ? "login" : "register"}`,
+        `https://user-authentication-system-practice.netlify.app/api/auth/${isLogin ? "login" : "register"}`,
         {
           method: "POST",
           headers: {
