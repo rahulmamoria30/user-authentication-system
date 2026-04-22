@@ -13,11 +13,12 @@ const LoginForm: React.FC = () => {
   const [form] = Form.useForm()
   const navigate = useNavigate()
   const [isLogin, setIsLogin] = useState(true)
+  const apiBaseUrl = import.meta.env.VITE_API_URL || "http://localhost:5000"
 
   const onFinish = async (values: LoginFormValues) => {
     try {
       const response = await fetch(
-        `https://user-authentication-system-practice.netlify.app/api/auth/${isLogin ? "login" : "register"}`,
+        `${apiBaseUrl}/api/auth/${isLogin ? "login" : "register"}`,
         {
           method: "POST",
           headers: {
